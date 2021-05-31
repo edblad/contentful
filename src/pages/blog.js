@@ -59,8 +59,9 @@ export const pageQuery = graphql`
     allContentfulSimpleBlogPost {
       edges {
         node {
-          heading
+          title
           slug
+          publishDate(formatString: "MMMM Do, YYYY")
         }
       }
     }
